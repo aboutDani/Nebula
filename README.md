@@ -2,12 +2,8 @@
 
 Un universo generativo interattivo realizzato con **p5.js** e adattato da uno sketch originale in Processing (Java Mode). Funziona su desktop e smartphone, con controlli touch.
 
-## Demo / Pubblicazione con GitHub Pages
-
-1. Crea un repository pubblico su GitHub (es. `nebula-p5js`).
-2. Carica **i file contenuti in questa cartella** nella radice del repository (`index.html`, `sketch.js`, `style.css`, `README.md`, `LICENSE`).
-3. Vai su **Settings → Pages** e seleziona **Deploy from a branch**, branch `main`, cartella `/(root)`.
-4. Attendi la pubblicazione. Il sito sarà raggiungibile all'indirizzo GitHub Pages mostrato nelle impostazioni.
+## Demo / Pubblicazione con GitHub Pages 
+https://aboutdani.github.io/Nebula/
 
 ## Avvio in locale
 
