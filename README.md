@@ -1,21 +1,9 @@
 # NEBULA — Generative Universe ✨
 
-Un universo generativo interattivo realizzato con **p5.js** e adattato da uno sketch originale in Processing (Java Mode). Funziona su desktop e smartphone, con controlli touch.
+Un universo generativo interattivo realizzato con **p5.js** 
 
-## Demo / Pubblicazione con GitHub Pages 
+## Demo
 https://aboutdani.github.io/Nebula/
-
-## Avvio in locale
-
-Apri `index.html` nel browser con una connessione Internet, oppure avvia un server locale:
-
-```bash
-python -m http.server 8000
-```
-
-Poi apri `http://localhost:8000`.
-
-> p5.js è caricato da CDN: serve una connessione Internet per il primo caricamento e per ogni visita senza cache. Per renderlo completamente offline, scarica una copia di `p5.min.js` e sostituisci il riferimento CDN in `index.html` con un percorso locale.
 
 ## Controlli
 
@@ -41,9 +29,3 @@ Poi apri `http://localhost:8000`.
 ## Prestazioni
 
 Il numero iniziale di particelle è inferiore sui dispositivi touch (650 anziché 1800) e il massimo è limitato (1800 touch, 5500 desktop). Usa il pulsante `−` se il telefono rallenta. Il rendering utilizza Canvas 2D, non WebGL.
-
-## Struttura
-
-- `index.html` — pagina web e pulsanti.
-- `style.css` — layout responsive e safe area mobile.
-- `sketch.js` — simulazione, particelle e input pointer/touch.
