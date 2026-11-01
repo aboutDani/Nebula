@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#02040d">
+  <meta name="description" content="NEBULA — universo generativo interattivo in p5.js">
+  <title>NEBULA — Generative Universe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.11/p5.min.js"></script>
+  <script defer src="sketch.js"></script>
+</head>
+<body>
+  <main id="app" aria-label="Simulazione generativa NEBULA">
+    <div id="canvas-host"></div>
+    <div id="hud" class="hud">
+      <div class="brand">N E B U L A - M A R I E L L A</div>
+      <div class="stats"><span id="mode-label">GALACTIC SPIRAL</span><span id="stats-label"></span></div>
+      <div class="hint">Tocca: onda d'urto · Trascina: gravità</div>
+    </div>
+    <div id="controls" class="controls" aria-label="Controlli simulazione">
+      <div class="mode-buttons" role="group" aria-label="Modalità">
+        <button data-mode="0" class="active" aria-label="Galactic Spiral">🌌 <span>Galassia</span></button>
+        <button data-mode="1" aria-label="Nebula Flow">🌫️ <span>Nebulosa</span></button>
+        <button data-mode="2" aria-label="Quantum Storm">⚡ <span>Tempesta</span></button>
+        <button data-mode="3" aria-label="Orbital Dance">🪐 <span>Orbite</span></button>
+      </div>
+      <div class="action-buttons" role="group" aria-label="Azioni">
+        <button id="palette" title="Cambia palette">🎨 <span>Colori</span></button>
+        <button id="less" title="Meno particelle">−</button>
+        <span id="count-label" aria-live="polite">900</span>
+        <button id="more" title="Più particelle">+</button>
+        <button id="pause" title="Pausa">⏸ <span>Pausa</span></button>
+        <button id="reset" title="Ricomincia">↻ <span>Reset</span></button>
+        <button id="save" title="Salva immagine">📷 <span>Foto</span></button>
+        <button id="hide" title="Mostra o nascondi HUD">◉ <span>HUD</span></button>
+      </div>
+    </div>
+    <button id="show-controls" hidden aria-label="Mostra controlli">☰ Controlli</button>
+  </main>
+</body>
+</html>
